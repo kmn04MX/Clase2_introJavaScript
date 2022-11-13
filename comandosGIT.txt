@@ -1,0 +1,22 @@
+Comandos para configurar el usuario de git
+
+    git config --global user.email "aqui va el correo"
+    git config --global user.name "nombre del usuario"
+
+
+Pasos para para crear un nuevo repositorio
+    1. git init
+    2. git add .
+    3. git commit -m "escribe un comentario"
+    4. Se configura los usuarios globales y el username(solo si no estan configurados)
+    5. Se configura las key del repositorio con la maquina local para poder inormación
+    6. Se siguen los comandos que se mueestran al crear un nuevo repositorio, en especial
+        a. git branch -M main  --> para cambiarle el nombre a la rama principal por main, ya que algunas veces trae el nombre de master 
+            (opcional, ya que solo se debe verificar que que nuestra rama se llama main, en caso de que no, cambiarle el nombre a main)
+        b. git branch -M <nombre viejo> <nombre nuevo>
+        c. git remote add origin git@github.com:kmn04MX/ejercicio1xLaunchBackendMicrosoft.git
+        
+configurar la key para poder subir archivos
+    1. Se va al SSH ang GPG keys del repositorio del git
+    2. SEguir el tutorial de como generar una llave y se va al apartado de generate new SSH key
+        NOTA se copia donde se genero la llave .pub
